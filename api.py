@@ -15,6 +15,19 @@ app = Flask(__name__)
 def test():
     return "Test"
 
+@app.route("/score/")
+def score():
+     # load the model from disk
+    filename = 'finalized_model.sav'
+    loaded_model = pickle.load(open(filename, 'rb'))
+    
+    args = request.args
+    df = pd.DataFrame([args])
+    # Convert all columns to floats
+    df = df.map(lambda x: pd.to_numeric(x, errors='coerce'))
+    
+    return loaded_model.predict_proba(df, num_iteration=loaded_model.best_iteration_)[:, 1]
+
 @app.route("/prediction/")
 def askpersonalfeatures():
     
