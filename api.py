@@ -25,7 +25,7 @@ def score():
     df = pd.DataFrame([args])
     # Convert all columns to floats
     df = df.map(lambda x: pd.to_numeric(x, errors='coerce'))
-    happy = loaded_model.predict_proba(df[0], num_iteration=loaded_model.best_iteration_)[:, 1]
+    happy = loaded_model.predict_proba(df[0].reshape(1, -1), num_iteration=loaded_model.best_iteration_)[:, 1][0]
     
     return happy
 
