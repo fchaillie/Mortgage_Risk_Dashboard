@@ -76,16 +76,6 @@ def askpersonalfeatures():
    # load the model from disk
     filename = 'finalized_model.sav'
     loaded_model = pickle.load(open(filename, 'rb'))
-
-# #     MLFLOW_URI = 'http://127.0.0.1:7500'
-# #     mlflow.set_tracking_uri(uri = MLFLOW_URI) 
-# #     logged_model = 'runs:/4af57f379fb148da9a95085ec4621d9b/credit_default_model-2' 
-# #     loaded_model = mlflow.lightgbm.load_model(logged_model) # à remplacer par pickle .load une fois que j'ai bien le fichier en dur
-# #     # save the model to disk
-# #     filename = 'finalized_model.sav'
-# #     pickle.dump(loaded_model, open(filename, 'wb'))
-#     # pickle.dump(loaded_model,"happy_file")
-#     # faire tourner une fois pour crééer le modèle puis supprimer ces lignes pour n'avoir que la ligne pickle
     
     # Création de l'explainer
     explainer = lime_tabular.LimeTabularExplainer(train_df.values, 
@@ -96,7 +86,7 @@ def askpersonalfeatures():
                                                   discretize_continuous=False)
     
 
-    exp = explainer.explain_instance(df.values[0],loaded_model.predict_proba, num_features = 12)  
+    exp = explainer.explain_instance(df.values[0],loaded_model.predict_proba, num_features = 5)  
    
     return pickle.dumps(exp)
     
