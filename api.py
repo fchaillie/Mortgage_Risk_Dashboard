@@ -36,8 +36,11 @@ def valeur_moyenne():
     resume.loc[new_row_label] = new_row_values
     resume = resume.rename_axis("Features")
     resume = resume.T
+    print(resume)
+    print(type(resume))
     
-    return resume
+    resume_json = resume.to_json(orient='split')
+    return resume_json
 
 @app.route("/score/")
 def score():
