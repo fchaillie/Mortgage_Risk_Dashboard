@@ -20,7 +20,7 @@ def valeur_moyenne():
     df = df.map(lambda x: pd.to_numeric(x, errors='coerce'))
     print(df.values[0])
     
-    resume = pd.read_csv('C:\\Users\\flore\\Desktop\\opensclass\\Projet 7\\virtual7\\stuff\\train_df_all_features.csv')
+    resume = pd.read_csv('train_df_less_features.csv')
     feats = ["EXT_SOURCE_1", "EXT_SOURCE_2", "EXT_SOURCE_3", "PAYMENT_RATE", "DAYS_BIRTH", "DAYS_EMPLOYED",
              "DAYS_EMPLOYED_PERC", "DAYS_REGISTRATION", "DAYS_ID_PUBLISH", "AMT_ANNUITY", "ANNUITY_INCOME_PERC",
              "INSTAL_DBD_MEAN", "REGION_POPULATION_RELATIVE","TARGET"]
