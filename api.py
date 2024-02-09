@@ -51,7 +51,7 @@ def score():
     args = request.args
     df = pd.DataFrame([args])
     # Convert all columns to floats
-    df = df.applymap(lambda x: pd.to_numeric(x, errors='coerce'))
+    df = df.map(lambda x: pd.to_numeric(x, errors='coerce'))
     happy = loaded_model.predict_proba(df.values, num_iteration=loaded_model.best_iteration_)[:, 1]
     # Parse the string as a list containing float(s)
     print(happy[0])
