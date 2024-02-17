@@ -10,6 +10,23 @@ import pickle
 
 app = Flask(__name__)
 
+# Getting the prediction of the model for a client
+@app.route("/score/")
+def score():
+    # Load the model
+    filename = 'finalized_model.sav'
+    loaded_model = pickle.load(open(filename, 'rb'))
+    
+    args = request.args
+    df = pd.DataFrame([args])
+
+    # Convert all columns to floats
+    df = df.map(lambda x: pd.to_numeric(x, errors ='coerce'))
+
+    happy = loaded_model.predict_proba(df.values, num_iteration = loaded_model.best_iteration_)[:, 1]
+    print(happy[0])
+    return str(happy[0])
+
 # Creating a table to compare the clients with the 2 groups of customers (good and bad ones)
 @app.route("/valeur_moyenne/")
 def valeur_moyenne():
@@ -40,22 +57,7 @@ def valeur_moyenne():
 
     return resume_json
 
-# Getting the prediction of the model for a client
-@app.route("/score/")
-def score():
-    # Load the model
-    filename = 'finalized_model.sav'
-    loaded_model = pickle.load(open(filename, 'rb'))
-    
-    args = request.args
-    df = pd.DataFrame([args])
 
-    # Convert all columns to floats
-    df = df.map(lambda x: pd.to_numeric(x, errors='coerce'))
-
-    happy = loaded_model.predict_proba(df.values, num_iteration=loaded_model.best_iteration_)[:, 1]
-
-    return str(happy[0])
 
 # Getting the personal features that explained the prediction for that client
 @app.route("/prediction/")
