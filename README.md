@@ -5,4 +5,4 @@ Le fichier "Procfile" informe Heroku que c'est une API qu'on veut lancer.
 Le fichier "pyvenv.cfg" donne des informations sur la configuration sur mon PC.
 Le fichier "requirement.txt" liste liste les packages à installer qui sont nécessaires pour faire tourner cette API.
 Le fichier "runtime.text" liste la version de Python utilisée.
-Le fichier
+Le fichier "train_df_less_features.csv" est un ensemble de données que je vais utiliser pour comparer le nouveau client avec ceux que l'on a déjà"
