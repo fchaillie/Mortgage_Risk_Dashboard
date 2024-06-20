@@ -1,8 +1,10 @@
-Tous les fichiers présents dans ce repository servent à créer l'API sur Heroku.
-Le fichier principal de l'API est "api.py".
-Le fichier "finalized_model.sav" est le modèle de prédiction au format Pickle.
-Le fichier "Procfile" informe Heroku que c'est une API qu'on veut lancer.
-Le fichier "pyvenv.cfg" donne des informations sur la configuration sur mon PC.
-Le fichier "requirement.txt" liste liste les packages à installer qui sont nécessaires pour faire tourner cette API.
-Le fichier "runtime.text" liste la version de Python utilisée.
-Le fichier "train_df_less_features.csv" est un ensemble de données que je vais utiliser pour comparer le nouveau client avec ceux que l'on a déjà"
+Welcome to the Readme section !
+
+All the files in this repository are used to create an API on Heroku.
+The main file for the API is "api.py".
+The file "finalized_model.sav" is the prediction model in Pickle format.
+The file "Procfile" informs Heroku that it is an API that I am launching.
+The file "pyvenv.cfg" gives information on the configuration of my PC.
+The file "requirement.txt" lists the necessary packages to install to run the API.
+The file "runtime.text" gives the Python version used.
+The file "train_df_less_features.csv" will be used to compare a new client with the ones we have already. 
