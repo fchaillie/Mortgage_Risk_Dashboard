@@ -1,11 +1,9 @@
-Summary: 
+Loan_Project_API Repository Summary:
 
-The files in this repository "Loan_Project_API" are linked to a project where I put a model on the cloud through the site Heroku using an API.
-The model predicts the likelyhood that a new client could reimburse a loan given the information on the loan request. The client information is entered in a dashboard that interacts with an API on Heroku. 
+This is a project for a loan company that needs to predict the likelyhood that new clients will not reimburse their loan given the information on their loan request. The client information is entered in a dashboard and interacts with an API before returning an answer saying if the loan request is accepted or not. The files in this repository "Loan_Project_API" are only for the building of the API on Heroku.
 
 Details:
 
-All the files in this repository are used mainly to create the API on Heroku.
 The main file for the API is "api.py".
 The file "finalized_model.sav" is the prediction model in Pickle format.
 The file "Procfile" informs Heroku that it is an API that I am launching.
