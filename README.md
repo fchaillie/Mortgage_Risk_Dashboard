@@ -1,6 +1,6 @@
 Summary: 
 
-The files in this repository "projet7_api" are linked to a project where I put a model on the cloud through the site Heroku using an API.
+The files in this repository "Loan_Project_API" are linked to a project where I put a model on the cloud through the site Heroku using an API.
 The model predicts the likelyhood that a new client could reimburse a loan given the information on the loan request. The client information is entered in a dashboard that interacts with an API on Heroku. 
 
 Details:
