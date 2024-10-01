@@ -11,4 +11,4 @@ The files in this repository are only for the building of the dashboard on Herok
 3) "requirement.txt" lists the packages to install to make this dashboard.
 4) "runtime.text" gives the Python version used.
 5) "tests" has the tests that will be executed every time I push a file on this branch (Github Actions).
-6) Files "Pipfile", "Pipfile.lock", "setup.sh" and the folder "src" configurate the dashboard according to my system settings.
+6) "Pipfile", "Pipfile.lock", "setup.sh" and folder "src" configurate the dashboard according to my system settings.
