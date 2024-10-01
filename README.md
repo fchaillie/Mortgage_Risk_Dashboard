@@ -1,8 +1,8 @@
 ## Loan Provider Models and Data Summary
 
-The 4 notebooks in this branch are related to the data used for the model and the model used for the default prediction of new clients.
+The 4 notebooks are related to the data used and the predictive model.
 
-**Details of each file:**
+*Details of each file:*
 
 **Notebook "Business_metrics":**
 I build a confusion matrix to find the most profitable default threshold (between 0 and 1) to be used by the company to determine whether a loan is granted or not to a new client. If the probability of default given by the model for a client is higher than the threshold then the loan is not granted.
