@@ -14,5 +14,5 @@ If there is a significant difference between the 2 sets then the data needs to b
 **Notebook "Model_Balanced_Classes":**
 I test the Light GBM model with the 2 unbalanced classes ("good" clinets and "bad" clients) and I load that model on the site ML Flow (mlflow.org) for tracking purposes. Then I do the same for the model with the 2 classes that are balanced this time.
 
-**Notebook "Model_creation_ML_Flow_uploading":**
+**Notebook "Model_Creation_and_ML_Flow_Upload":**
 I test the Light GBM model with 798 features then test the model with only the most important 13 features. Then I upload the lighter model on ML Flow.
