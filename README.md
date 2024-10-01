@@ -1,10 +1,8 @@
 ## Loan Project Dashboard Summary:
+ 
+A loan provider needs to predict the probability that new loan applicants will reimburse their loan given the information on their loan request. The client information is entered in a dashboard that interacts with an API before returning an answer. 
 
-A loan company that needs to predict the likelyhood that new clients will not reimburse their loan given the information on their loan request. 
-The client information is entered in a dashboard and interacts with an API before returning an answer saying if the loan request is accepted or not. 
-
-The files in this Loan_Project_Dashboard branch are for the dashboard made with Streamlit on Heroku. It used by the company staff. 
-The files in the other branch "Loan_Project_Models_and_data" are related to the models used and the data used for the final model put on the cloud.
+The files in this repository are only for the building of the dashboard on Heroku with Streamlit. The repository "Loan Provider API" covers the API on Heroku and the repository "Loan Provider Models and Data" covers the data used and the predictive model creation.
 
 **Details of the files:**
 
