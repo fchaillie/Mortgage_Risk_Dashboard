@@ -5,7 +5,7 @@ The 4 notebooks are related to the data used and the predictive model.
 **Details of each file:**
 
 **Notebook "Business_metrics":**
-I build a confusion matrix to find the most profitable default threshold (between 0 and 1) to be used by the loan provider to determine whether a loan is granted or not to a new client. If the probability of default given by the model for a client is higher than the threshold then the loan is not granted.
+I build a confusion matrix to find the most profitable credit default threshold (between 0 and 1) to be used by the home loan provider to determine whether a loan is granted or not to a new client. If the probability of default given by the model for a client is higher than the threshold then the loan is not granted.
 
 **Notebook "Data_Drift":**
 I analyze the data drift between the train data and the test data to see if there is a fundamental change in the data, using the library Evidently.
