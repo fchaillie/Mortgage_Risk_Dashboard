@@ -1,6 +1,6 @@
-## Loan Provider API Summary:
+## Home Loan Provider API Summary:
 
-A loan provider needs to predict the probability that new loan applicants will reimburse their loan given the information on their loan request. The client information is entered in a dashboard that interacts with an API before returning an answer. The files in this repository are only for the building of the API on Heroku. The repository "Loan Provider Dashboard" covers the dahsboard and the repository"Loan Provider Models and Data" covers the data used and the predictive model creation.
+A home loan provider needs to predict the probability that new loan applicants will reimburse their loan given the information on their loan request. The client information is entered in a dashboard that interacts with an API before returning an answer. The files in this repository are only for the building of the API on Heroku. The repository "Home Loan Provider Dashboard" covers the dahsboard and the repository "Home Loan Provider Models and Data" covers the data used and the predictive model creation.
 
 **Details for each file:**
 
