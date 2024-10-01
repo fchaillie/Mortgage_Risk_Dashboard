@@ -1,4 +1,4 @@
-# Loan Provider Models and Data Summary
+## Loan Provider Models and Data Summary
 
 The 4 notebooks in this branch are related to the data used for the model and the model used for the default prediction of new clients.
 
