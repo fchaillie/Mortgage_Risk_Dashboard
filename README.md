@@ -1,8 +1,8 @@
-## Loan Project Dashboard Summary:
+## Home Loan Provider Dashboard Summary:
  
-A loan provider needs to predict the probability that new loan applicants will reimburse their loan given the information on their loan request. The client information is entered in a dashboard that interacts with an API before returning an answer. 
+A home loan provider needs to predict the probability that new loan applicants will reimburse their loan given the information on their loan request. The client information is entered in a dashboard that interacts with an API before returning an answer. 
 
-The files in this repository are only for the building of the dashboard on Heroku with Streamlit. The repository "Loan Provider API" covers the API on Heroku and the repository "Loan Provider Models and Data" covers the data used and the predictive model creation.
+The files in this repository are only for the building of the dashboard on Heroku with Streamlit. The repository "Home Loan Provider API" covers the API on Heroku and the repository "Home Loan Provider Models and Data" covers the data used and the predictive model creation.
 
 **Details of the files:**
 
