@@ -34,7 +34,7 @@ GitPython==3.1.41
 greenlet==3.0.3
 gunicorn==21.2.0
 h11==0.14.0
-idna==3.6
+idna==3.7
 imageio==2.33.1
 importlib-metadata==7.0.1
 ipykernel==6.29.0
