@@ -45,7 +45,6 @@ mlartifacts/
 data/raw/
 data/interim/
 data/tmp/
-*.csv
 *.parquet
 *.xlsx
 
